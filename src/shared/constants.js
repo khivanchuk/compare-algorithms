@@ -6,3 +6,5 @@ export const DATA_ORDER_OPTIONS = {
 };
 
 export const DATA_COUNT = [10, 1000, 5000, 10000, 20000];
+
+export const GITHUB_URL = 'https://github.com/kivanchuk/compare-algorithms';

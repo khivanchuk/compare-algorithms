@@ -8,7 +8,7 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <p class="buttons">
-            <button class="button">
+            <button class="button" v-on:click="goToGitHub()">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
@@ -22,8 +22,16 @@
 </template>
 
 <script>
+import { GITHUB_URL } from '@/shared/constants';
+
 export default {
   name: 'NavBar',
+
+  methods: {
+    goToGitHub() {
+      window.location.href = GITHUB_URL;
+    },
+  },
 };
 </script>
 
